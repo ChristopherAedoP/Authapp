@@ -13,7 +13,7 @@ export class AuthService {
     domain: 'christopher-aedo-p.auth0.com',
     responseType: 'token id_token',
     audience: 'https://christopher-aedo-p.auth0.com/userinfo',
-    redirectUri: 'http://localhost:4200/callback',
+    redirectUri: 'https://christopheraedop.github.io/Authapp/callback',
     scope: 'openid profile'
   });
 
