@@ -1,0 +1,13 @@
+
+
+<div class="jumbotron animated fadeIn">
+  <h1 class="display-3">Ejemplo de auth0</h1>
+  <p class="lead">aplicación angular 2 de ejemplo de autentificación de usuario con múltiples cuentas utilizando el servicio de auth0.com</p>
+  <hr class="my-4">
+  <p>Presiona en el botón “Ingresar” para acceder al menú protegido con tu cuenta favorita.</p>
+  <p class="lead">
+
+    <button (click)="salir()" *ngIf="auth.isAuthenticated()" type="button" class="btn btn-primary btn-lg">Salir</button>
+    <button (click)="login()" *ngIf="!auth.isAuthenticated()" type="button" class="btn btn-primary btn-lg">Ingresar</button>
+  </p>
+</div>

@@ -1,0 +1,22 @@
+
+<h4>Lista de precios de productos</h4>
+  <p>
+    Productos disponible para todos los usuarios.
+  </p>
+<hr>
+
+<div class="card-columns animated fadeIn">
+
+
+  <div  *ngFor="let producto of productos; let i = index;"
+  class="card">
+    <div class="card-body">
+      <h4 class="card-title">Producto :
+        {{ producto.nombre }}</h4>
+      <p class="card-text">  {{ producto.desc }} </p>
+      <p class="card-text">
+        <small class="text-muted">Valor: $ {{producto.precio}}.- </small>
+      </p>
+    </div>
+  </div>
+</div>
